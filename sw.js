@@ -1,5 +1,5 @@
 /* Generated for a single Maya release. Activation is always user initiated. */
-const CONFIG={"build":"94c235e77728","shell":"shell-94c235e77728.html","assets":["./maya-icon-192.png?v=rc4","./maya-icon.svg","./assets/index-BlpHrxje.js","./assets/index-DBqnO6MY.css","./maya-wordmark.svg","./manifest.webmanifest","./maya-icon-192.png","./maya-icon-512.png"]};
+const CONFIG={"build":"19534d6cb995","shell":"shell-19534d6cb995.html","assets":["./maya-icon-192.png?v=rc4","./maya-icon.svg","./assets/index-DHLoRGHv.js","./assets/index-BTu5nXNz.css","./maya-wordmark.svg","./manifest.webmanifest","./maya-icon-192.png","./maya-icon-512.png"]};
 const ROOT=new URL('./',self.registration.scope);
 const PREFIX='maya-offline:'+ROOT.pathname+':';
 const CACHE=PREFIX+CONFIG.build;
