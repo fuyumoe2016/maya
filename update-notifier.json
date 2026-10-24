@@ -1,5 +1,5 @@
 {
-  "feedUrl": "./updates.xml",
-  "approvedBoothUrl": "",
+  "feedUrl": "https://raw.githubusercontent.com/fuyumoe2016/fuyuno-updates/main/maya.xml",
+  "approvedPageUrl": "https://fuyumoe2016.github.io/maya/",
   "installedVersion": "1.0.0"
 }

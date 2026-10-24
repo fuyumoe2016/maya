@@ -1,5 +1,5 @@
 /* Generated for a single Maya release. Activation is always user initiated. */
-const CONFIG={"build":"5f230df1983d","shell":"shell-5f230df1983d.html","assets":["./maya-icon-192.png?v=rc4","./maya-icon.svg","./assets/index-YEOYlR6C.js","./assets/index-bsliLFi-.css","./maya-wordmark.svg","./manifest.webmanifest","./maya-icon-192.png","./maya-icon-512.png"]};
+const CONFIG={"build":"f8e15d48d96c","shell":"shell-f8e15d48d96c.html","assets":["./maya-icon-192.png?v=rc4","./maya-icon.svg","./assets/index-BF2iUzYf.js","./assets/index-bsliLFi-.css","./maya-wordmark.svg","./manifest.webmanifest","./maya-icon-192.png","./maya-icon-512.png"]};
 const ROOT=new URL('./',self.registration.scope);
 const PREFIX='maya-offline:'+ROOT.pathname+':';
 const CACHE=PREFIX+CONFIG.build;
@@ -14,6 +14,7 @@ self.addEventListener('install',event=>{event.waitUntil((async()=>{
 })());});
 self.addEventListener('message',event=>{if(event.data?.type!=='ACTIVATE_UPDATE')return;event.waitUntil((async()=>{
  const port=event.ports?.[0];if(!port)return;
+ if(event.data.expectedBuild&&event.data.expectedBuild!==CONFIG.build){port.postMessage({ok:false,reason:'更新情報と本体の版が一致しません。メモを残したまま更新を確認し直してください。'});return;}
  const clients=(await self.clients.matchAll({type:'window',includeUncontrolled:true})).filter(c=>c.url.startsWith(ROOT.href));
  if(clients.length!==1||!clients.some(c=>c.id===event.source?.id)){port.postMessage({ok:false,reason:'ほかのMayaのタブ・画面を閉じてから更新してください。'});return;}
  port.postMessage({ok:true});await self.skipWaiting();
