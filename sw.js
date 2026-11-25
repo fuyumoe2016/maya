@@ -1,5 +1,5 @@
 /* Generated for a single Maya release. Activation is always user initiated. */
-const CONFIG={"build":"2d61128154cc","shell":"shell-2d61128154cc.html","assets":["./maya-icon-192.png?v=1.1","./maya-icon.svg","./assets/index-kZmiFCdr.js","./assets/index-BzS62hWt.css","./maya-wordmark.svg?v=1.1","./assets/dog-BC2bwTqY.webp","./assets/green-CSFEb9_a.webp","./assets/hat-B2rYfL-t.webp","./assets/hike-5BptIzZG.webp","./assets/ocean-CVspMu4Y.webp","./manifest.webmanifest","./maya-icon-192.png","./maya-icon-512.png","./maya-wordmark.svg"]};
+const CONFIG={"build":"8fdaae01e893","shell":"shell-8fdaae01e893.html","assets":["./maya-icon-192.png?v=1.1","./maya-icon.svg","./assets/index-Do64Ag92.js","./assets/index-DXTHPWnk.css","./maya-wordmark.svg?v=1.1","./assets/dog-BC2bwTqY.webp","./assets/green-CSFEb9_a.webp","./assets/hat-B2rYfL-t.webp","./assets/hike-5BptIzZG.webp","./assets/ocean-CVspMu4Y.webp","./manifest.webmanifest","./maya-icon-192.png","./maya-icon-512.png","./maya-wordmark.svg"]};
 const ROOT=new URL('./',self.registration.scope);
 const PREFIX='maya-offline:'+ROOT.pathname+':';
 const CACHE=PREFIX+CONFIG.build;
